@@ -12,7 +12,7 @@ var app = express();
 
 // connect to database
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://dominickmreever@gmail.com:database2.9aijh.mongodb.net/locallib?retryWrites=true&w=majority'
+var mongoDB = 'mongodb+srv://user0:datapass1@cluster0.9aijh.mongodb.net/locallib?retryWrites=true&w=majority'
 
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 
