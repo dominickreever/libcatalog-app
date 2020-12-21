@@ -14,7 +14,8 @@ var app = express();
 
 // connect to database
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://user0:datapass1@cluster0.9aijh.mongodb.net/locallib?retryWrites=true&w=majority'
+var dev_db_url = 'mongodb+srv://user0:datapass1@cluster0.9aijh.mongodb.net/locallib?retryWrites=true&w=majority'
+var mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 
