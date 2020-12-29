@@ -1,5 +1,73 @@
-.sidebar-nav {
-  margin-top: 20px;
-  padding: 0;
-  list-style: none;
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  height: 3em;
+  width: 100vw;
+  background-color: red;
+  text-align: center;
+}
+
+.filler {
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.header a {
+  box-sizing: border-box;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  width: 100%;
+  padding-top: 1em;
+}
+
+.header a:hover {
+  background-color: darkred;
+}
+
+#create-nav-btn {
+  background-color: red;
+  cursor: pointer;
+  border: none;
+}
+
+#create-nav-btn:hover {
+  background-color: darkred;
+}
+
+.create-nav {
+  display: none;
+}
+
+.create-nav:target {
+  position: absolute;
+  top: 3em;
+  right: 0;
+  display: grid;
+  text-align: center;
+  background-color: red;
+}
+
+.create-nav a {
+  padding: 1em;
+  box-sizing: border-box;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.create-nav a:hover {
+  background-color: darkred;
+}
+
+.wrapper {
+  position: absolute;
+  top: 5em;
+  left: 5em;
 }
