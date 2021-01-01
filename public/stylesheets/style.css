@@ -50,6 +50,7 @@
   display: grid;
   text-align: center;
   background-color: red;
+  z-index: 1;
 }
 
 .create-nav a {
@@ -68,6 +69,7 @@
 
 .wrapper {
   position: absolute;
-  top: 5em;
-  left: 5em;
+  top: 4em;
+  left: 2em;
+  margin-right: 2rem;
 }
